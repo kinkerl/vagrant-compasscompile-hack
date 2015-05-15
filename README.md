@@ -3,7 +3,7 @@
 A simple script hack to get a good experience when working with `vagrant` and `compass watch`. 
 This basically reimplements `compass watch` and executes `compass compile` inside the vagrant client on file change.
 
-This is implemented with minial requirements in mind. This should work out of the box without any additional installation of any tools. `compass` and these tools should be installed inside the vagrant environment.
+This is implemented with minimal requirements in mind. This should work out of the box without any additional installation of any tools. `compass` and these tools should be installed inside the vagrant environment.
 
 # Quickstart
 
@@ -17,3 +17,8 @@ Some files will get created which should not get commited again. Add these files
 
 * .checkpoint
 * .vagrant-ssh
+
+
+# TODO
+
+* Mac OS notification support
