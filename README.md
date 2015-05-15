@@ -3,7 +3,9 @@
 A simple script hack to get a good experience when working with `vagrant` and `compass watch`. 
 This basically reimplements `compass watch` and executes `compass compile` inside the vagrant client on file change.
 
-This is implemented with minimal requirements in mind. This should work out of the box without any additional installation of any tools. `compass` and these tools should be installed inside the vagrant environment.
+This is implemented with minimal requirements in mind. This script does not register with inotify to get file changes but is using timestamps (`find -newer`) instead. This should work out of the box without any additional installation of any tools. 
+
+`compass` and these tools should be installed inside the vagrant environment.
 
 # Quickstart
 
